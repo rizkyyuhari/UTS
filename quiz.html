@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Believe!</title>
+  
+    <link rel="stylesheet" type="text/css" href="coba.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="quiz.js"></script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Muhammad Rizky Yuhari</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="myproject.html">Prevention</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="askme.html">Data & Statistic</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Quiz</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <br>
+    <br>
+  <h1 class="font-weight-bold text-center">QUIZ TENTANG COVID-19</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+
+   <form name="quiz" id="quiz">
+    <div>
+      <p>1.Virus Corona (COVID-19) yang menyerang manusia muncul di negara ... pada awal tahun 2020.</p>
+      <p><input type="radio" name="question1" value="Cina">A. Cina</p>
+     <p><input type="radio" name="question1" value="Indonesia">B. Indonesia</p>
+      <p><input type="radio" name="question1" value="Bekasi">C. Bekasi</p>
+      <p><input type="radio" name="question1" value="Amerika">D. Amerika</p>
+    </div>
+    
+    <div>
+      <p>2.Virus corona (COVID-19) dibawa oleh hewan... dan menular kepada manusia.</p>
+      <p><input type="radio" name="question2" value="Itik">A. Itik</p>
+     <p><input type="radio" name="question2" value="Ular">B. Ular</p>
+      <p><input type="radio" name="question2" value="Babi">C. Babi</p>
+      <p><input type="radio" name="question2" value="Kelelawar">D. Kelelawar</p>
+    </div>
+
+    <div>
+      <p>3.COVID-19 bisa masuk melalui anggota-anggota tubuh di bawah ini, kecuali...</p>
+      <p><input type="radio" name="question3" value="Mata">A. Mata</p>
+     <p><input type="radio" name="question3" value="Hidung">B. Hidung</p>
+      <p><input type="radio" name="question3" value="Telinga">C. Telinga</p>
+      <p><input type="radio" name="question3" value="Mulut">D. Mulut</p>
+    </div>
+
+    <div>
+      <p>4.Dibawah ini adalah media penyebaran virus Corona, kecuali....</p>
+      <p><input type="radio" name="question4" value="touch">A. Bersalaman/Sentuhan tangan</p>
+     <p><input type="radio" name="question4" value="air">B. Udara </p>
+      <p><input type="radio" name="question4" value="cough">C. Percikan batuk dan bersin</p>
+      <p><input type="radio" name="question4" value="padat">D. Benda-benda Padat</p>
+    </div>
+
+    <div>
+      <p>5.berikut ini cara menjaga diri dari covid, KECUALI..</p>
+      <p><input type="radio" name="question5" value="tanpamasker">A. berpergian tanpa memakai masker</p>
+     <p><input type="radio" name="question5" value="distance">B. menjaga jarak</p>
+      <p><input type="radio" name="question5" value="crowd">C. menghindari kerumunan</p>
+      <p><input type="radio" name="question5" value="wash">D. mencuci tangan</p>
+    </div>
+    
+
+    <input type="button" name="" value="Done!" onclick="check()">
+
+
+    <p id="result"></p>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<br><br><br><br>
+
+  
+ 
+
+  </div>
+</section>
+
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center"> 
+        <div class="col item social">
+             <a href="https://facebook.com/"><i class="icon ion-social-facebook"></i></a>
+             <a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+             <a href="https://github.com/"><i class="icon ion-social-github-outline"></i></a>
+         </div>
+    </div>
+  </footer>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
